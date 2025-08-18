@@ -1,0 +1,65 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+   background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/06/11.-Lawrencium.png);
+   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#aboutme{
+    padding: 70px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    position: relative;
+       
+}
+#aboutme::after{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: red;
+  z-index: -1;
+  padding: 10px;
+}
+#aboutme p{
+    max-width: 600px;
+}
+.forimg{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(https://static.vecteezy.com/system/resources/previews/038/974/578/non_2x/ai-generated-professional-portrait-of-a-competent-woman-free-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none; */
+} 
+
+.forimg img{
+    height: 390px;
+    width: 390px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+
+
+ 
+
+
+

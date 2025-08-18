@@ -1,0 +1,152 @@
+.home{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding: 50px;
+ height: 80vh;
+ /* background: linear-gradient(135deg, #e3f2fd, #bbdefb); */
+ background-image: url(https://www.belman.com/wp-content/uploads/2020/02/blocks-image-322.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.sub1{
+    height: 360px;
+    width: 700px;
+    /* border: 1px solid black; */
+    text-align: center;
+    border-radius: 17px;
+    position: relative;
+    background: rgba(0,0,0,0.6);
+    margin: 0 auto;
+}
+.sub1::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 10px;
+    background-image: conic-gradient(red,blue);
+}
+
+.sub2{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.sub1 h1{
+    font-size: 40px;
+    color: white;
+}
+.sub1 h3{
+    font-size: 20px;
+    color: white;
+}
+.sub1 h4{
+    font-size: 20px;
+    color: #A3CEF1;
+}
+.sub1 p{
+    color: #CCCCCC;
+    font-weight: bold;
+}
+.sub1 button{
+    padding: 10px 20px;
+   border-radius: 10px;
+   background-color: #00B8D9;
+   border: none;
+} 
+.sub1 button {
+    color: #012E40;
+    font-size: 18px;
+    text-decoration: none;
+}
+.sub1 button:hover{
+    background: blue;
+    
+}
+.sub1 .name{
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+.sub1 .name:hover{
+    text-decoration: underline;
+     transform: scale(1.1);
+}
+
+.projects{
+    padding: 50px;
+    background-color: #212121;
+    text-align: center;
+    min-height: 60vh;
+}
+.projects h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2BA2D2;
+}
+.project-list{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.projectlist{
+    height: 300px;
+    width: 320px;
+    border: 1px solid white;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 7px rgba(193, 191, 191, 0.6);
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* gap: 6px; */
+}
+.projectlist h1{
+    font-size: 40px;
+    color: #FD0098;
+    text-decoration:none;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.btn:hover{
+    background: #001C82;
+}
+
+.projectlist:hover{
+   transform: scale(1.1);
+
+}
+.projectlist p{
+    padding-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
