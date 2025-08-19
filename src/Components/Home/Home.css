@@ -2,13 +2,14 @@
  display: flex;
  justify-content: space-around;
  align-items: center;
- padding: 50px;
- height: 80vh;
+ padding: 20px;
+ min-height: 100vh;
  /* background: linear-gradient(135deg, #e3f2fd, #bbdefb); */
  background-image: url(https://www.belman.com/wp-content/uploads/2020/02/blocks-image-322.jpg);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ background-attachment: fixed;
 }
 .sub1{
     height: 360px;
@@ -19,8 +20,9 @@
     position: relative;
     background: rgba(0,0,0,0.6);
     margin: 0 auto;
+    padding: 15px;
 }
-.sub1::after{
+/* .sub1::after{
     content: "";
     position: absolute;
     height: 100%;
@@ -32,7 +34,7 @@
     z-index: -1;
     padding: 10px;
     background-image: conic-gradient(red,blue);
-}
+} */
 
 .sub2{
     height: 300px;
@@ -139,6 +141,111 @@
 .projectlist p{
     padding-top: -10px;
 }
+
+
+/* Tablets */
+@media (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .sub1 {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .sub1 h1 {
+    font-size: 32px;
+  }
+
+  .sub1 h3, .sub1 h4, .sub1 p {
+    font-size: 16px;
+  }
+
+  .sub1 button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home {
+    flex-direction: column;
+    min-height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .sub1 {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .sub1 h1 {
+    font-size: 26px;
+  }
+
+  .sub1 h3, .sub1 h4, .sub1 p {
+    font-size: 14px;
+  }
+
+  .sub1 button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+
+
+/* Tablets */
+@media (max-width: 900px) {
+  .project-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .projectlist {
+    width: 80%;
+    height: auto;
+  }
+
+  .projectlist h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .project-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projectlist {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectlist h1 {
+    font-size: 26px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+
+
 
 
 

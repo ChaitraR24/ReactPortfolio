@@ -6,6 +6,11 @@
     width: 100%;
     /* background-color:  #f4f4f9; */
      background: #12445C;
+     flex-wrap: wrap;
+    padding: 80px 20px 50px 20px; 
+}
+.subedu:first-child {
+    margin-top: 30px; 
 }
 .subedu{
     height: 500px;
@@ -21,6 +26,7 @@
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease,box-shadow 0.3s ease;
+     /* margin: 20px; */
 }
 .forphoto1{
     height: 200px;
@@ -71,4 +77,51 @@
     box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     /* transform: rotate(360deg);
     transition: 2s; */
+}
+.main, .home, .edu {
+    padding-top: 70px; 
+     
+}
+
+
+
+
+@media (max-width: 900px) {
+    .subedu {
+        width: 300px;
+        height: 450px;
+    }
+    .forphoto1, .forphoto2, .forphoto3 {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .edu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+        min-height: auto;
+         padding: 50px 10px 30px 10px;
+    }
+    .subedu {
+        width: 80%; 
+        height: 350px;
+        padding: 20px;
+    }
+    .forphoto1, .forphoto2, .forphoto3 {
+        height: 100px;
+        width: 120px;
+    }
+    .subedu h2 {
+        font-size: 20px;
+    }
+    .subedu h3 {
+        font-size: 16px;
+    }
+    .subedu p {
+        font-size: 14px;
+    }
 }

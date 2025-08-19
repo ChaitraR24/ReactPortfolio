@@ -15,6 +15,9 @@ const Home = () => {
     window.open("https://github.com/ChaitraR24/Calculator")
   }
 
+  const openProjects3 = () =>{
+    window.open("https://github.com/ChaitraR24/ReactPortfolio")
+  }
   return (
     <>
     <section className='home'>
@@ -44,8 +47,8 @@ const Home = () => {
 
         <div className="projectlist">
           <h1>My-Portfolio</h1>
-          <p>"My portfolio highlights my web development skills and projects, built with React for a clean and responsive design."</p>
-           <button  onClick={openProjects2} className='btn'>View My Project</button>
+          <p>"My portfolio highlights my web development skills and projects, built with React for a clean and neat design."</p>
+           <button  onClick={openProjects3} className='btn'>View My Project</button>
         </div>
       </div>
     </section>

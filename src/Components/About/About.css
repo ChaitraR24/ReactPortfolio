@@ -8,6 +8,7 @@
    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+     background-attachment: fixed; 
 }
 
 #aboutme{
@@ -15,9 +16,10 @@
     background: #f5f5f5;
     border-radius: 20px;
     position: relative;
+    max-width: 600px;
        
 }
-#aboutme::after{
+/* #aboutme::after{
   position: absolute;
   content: '';
   height: 100%;
@@ -28,7 +30,7 @@
   background: red;
   z-index: -1;
   padding: 10px;
-}
+} */
 #aboutme p{
     max-width: 600px;
 }
@@ -55,6 +57,52 @@
     border-radius: 50%;
     position: absolute;
 }
+
+
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #aboutme {
+    padding: 50px;
+    margin: 15px;
+  }
+
+  .forimg {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  #aboutme {
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .forimg {
+    height: 200px;
+    width: 200px;
+  }
+
+  .forimg img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #aboutme p {
+    font-size: 14px; 
+  }
+}
+
 
 
 
